@@ -35,4 +35,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')))
 
 app.use(require('./routes')); //Importando o arquivo de rotas
 
-server.listen(3333); //Colocando a aplicação pra usar a porta definida
+server.listen(process.env.PORT || 3333); //Colocando a aplicação pra usar a porta definida
